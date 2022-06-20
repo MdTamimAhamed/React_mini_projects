@@ -1,0 +1,13 @@
+/*Card styles*/
+.card-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    flex: 0 1 25%;
+}
+
+.card-image{
+    display: flex;
+    justify-content: center;
+}

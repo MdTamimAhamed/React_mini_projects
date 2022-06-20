@@ -1,19 +1,22 @@
 import React from "react";
 import './card.css'
 
-function Card(){
+
+function Card(props){
     return(
         <>
-            <div className="container">
-                <div className="card-wrapper">
-                    <div className="card">
-                        <img src=""/>
-                        <div className="card-content">
-                            <p className="movie-time">11:30</p>
-                            <button className="watch-btn">Watch Now</button>
-                            <h2 className="movie-title">Shangchi</h2>
-                        </div>
-                    </div>
+            <div className="card">
+                <img 
+                    src={props.imgSrc} 
+                    alt="wallpaper" 
+                    height='400px' 
+                    width='300px'
+                    className="card-image"
+                />
+                <div className="card-content">
+                    <p className="movie-time">{props.mov_time}</p>
+                    <button className="watch-btn">Watch Now</button>
+                    <h2 className="movie-title">{props.imgTitle}</h2>
                 </div>
             </div>
         </>
