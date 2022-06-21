@@ -6,17 +6,18 @@ function Card(props){
     return(
         <>
             <div className="card">
-                <img 
-                    src={props.imgSrc} 
-                    alt="wallpaper" 
-                    height='400px' 
-                    width='300px'
-                    className="card-image"
-                />
+                <div className="card-img">
+                    <img 
+                        src={props.imgSrc} 
+                        alt="wallpaper" 
+                        height='350px' 
+                        width='300px'
+                    />
+                </div>
                 <div className="card-content">
-                    <p className="movie-time">{props.mov_time}</p>
+                    <p className="movie-availability">{props.availability}!</p>
+                    <h2 className="movie-title">Movie: {props.imgTitle}</h2>
                     <button className="watch-btn">Watch Now</button>
-                    <h2 className="movie-title">{props.imgTitle}</h2>
                 </div>
             </div>
         </>
