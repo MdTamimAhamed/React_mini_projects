@@ -17,7 +17,9 @@ function Card(props){
                 <div className="card-content">
                     <p className="movie-availability">{props.availability}!</p>
                     <h2 className="movie-title">Movie: {props.imgTitle}</h2>
-                    <button className="watch-btn">Watch Now</button>
+                    <a href={props.movLink} target="-blank">
+                        <button className="watch-btn">Watch Now</button>
+                    </a>
                 </div>
             </div>
         </>
