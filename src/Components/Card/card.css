@@ -3,7 +3,7 @@
     background-color: #ffffff;
 }
 .card-section{
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
   }
@@ -71,7 +71,7 @@
 
 
 /*media queries*/
-@media screen and (min-width: 375px ) {
+@media screen and (min-width: 350px ) {
     .card{
         flex: 0 1 100%;
     }

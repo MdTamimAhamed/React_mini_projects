@@ -1,14 +1,15 @@
 import Card from './Components/Card/Card.jsx';
 import CardData from './Components/Card/CardData';
+import Heading from './Components/Heading/Heading.jsx';
+import Clock from './Components/Clock/Clock';
 
 function App() {
   return (
     <>
-      <div className='card-header'>
-        <div className='container'>
-            <h1 className='list-title'>Movie Cards </h1>
-        </div>
-      </div>
+      {/* Card Section*/}
+      <Heading  
+        sectionTitle = "Movie Cards Practice"
+      />
       <div className='card-section'>
         <div className='container'>
           <div className='card-wrapper'>
@@ -22,10 +23,22 @@ function App() {
                     movLink={value.movLink}
                   />
                 );
-            })};
+            })}
           </div>
         </div>
       </div>
+
+      {/* Clock Section*/}
+        <Heading  
+          sectionTitle = "Digital Clock Practice"
+        />
+        <div className='clock-section'>
+          <div className='container'>
+              <div className='clock-wrapper'>
+                <Clock />
+              </div>
+          </div>
+        </div>
     </>
   );
 }

@@ -1,0 +1,9 @@
+/*Heading styles*/
+.card-header, .clock-header{
+    background-color: #ffffff;
+  }
+  .list-title{
+    padding: 20px 0px 20px 20px;
+    color: var(--heading-clr);
+    font-size: 1.5em;
+  }
