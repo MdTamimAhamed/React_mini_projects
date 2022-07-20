@@ -3,10 +3,10 @@ import '../Clock/clock.css';
 
 const Clock = () =>{
     let currTime = new Date().toLocaleTimeString();
-    const clr = "#000000";
+    const color = "#e74c3c";
 
     const[current, setTime] = useState(currTime);
-    const[bgColor, setBgColor] = useState(clr);
+    const[bgColor, setBgColor] = useState(color);
 
     const changeBgColor = () =>{
         let updateColor = "#5f27cd";
